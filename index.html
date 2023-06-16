@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // task 1
+        guess_my_fav_movie()
+
+        function guess_my_fav_movie() {
+            let my_movie = ["don't look up", "shaun of the dead"];
+            let movie = prompt("What is my favourite movie?");
+            if (movie == my_movie[0] || movie == my_movie[1]) {
+                alert("Nice, you got it")
+            } else {
+                alert("Try again")
+            }
+        }
+
+        // task 2
+        let arr = [1, 6, 2, 78, 26, 2, 5, 3, 2];
+        let sorted_arr = arr.sort(function (a, b) {
+            return b - a
+        });
+        alert(sorted_arr);
+    </script>
+</body>
+
+</html>
